@@ -1,0 +1,10 @@
+<html>
+    <head></head>
+    <body>
+        <#list li as i>
+            ${i.id}
+            ${i.name}
+            <br/>
+        </#list>
+    </body>
+</html>

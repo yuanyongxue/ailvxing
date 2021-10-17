@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>itripbackend</artifactId>
+        <groupId>j354ailx</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>itripdao</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>j354ailx</groupId>
+            <artifactId>itripbeans</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <!--这个元素描述了项目相关或测试相关的所有资源路径-->
+            <resource>
+                <!--描述存放资源的目录，该路径相对pom路径-->
+                <directory>src/main/java</directory>
+                <!--包含的模式列表，例如**/*.xml-->
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <!--是否使用参数值代替参数名。参数值取自properties元素或文件-->
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+</project>
